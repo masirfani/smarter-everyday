@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Belajar Git</title>
+</head>
+<body>
+	<h1>Belajar Git</h1>
+
+	<div>
+		<h4>git config</h4>
+		<p>git config --global user.name "namamu"</p>
+		<p>git config --global user.email emailmu@gmail.com</p>
+	</div>
+	<div>
+		<h4>git init</h4>
+		<p>digunakan untuk membuat projek baru</p>
+		<ul>
+			<li>git init . (membuat project di folder saat ini)</li>
+			<li>git init nama_project (membuat project dengan membuat file baru)</li>
+		</ul>
+	</div>
+
+	<div>
+		<h4>git status</h4>
+		<p>digunakan untuk mengecek status dalam sebuah project</p>
+	</div>
+
+	<div>
+		<h4>git add</h4>
+		<p>digunakan untuk menambahkan file</p>
+		<ul>
+			<li>git add nama_file (satu file)</li>
+			<li>git add nama_file, nama_file (beberapa file)</li>
+			<li>git add *.ekstensi_file (semua file ssuai ekstensi)</li>
+			<li>git add . (menambahkan semuanya)</li>
+		</ul>
+	</div>
+
+	<div>
+		<h4>git commit -m "keterangan"</h4>
+		<p>git commit untuk melaukan commit, -m untuk menambahkan "keterangan pada commit yang dilakukan"</p>
+	</div>
+
+	<div>
+		<h4>git log</h4>
+		<p>untuk melihat catatan kegiatan pada projek</p>
+		<ul>
+			<li>git log --oneline (melihat log singkat)</li>
+			<li>git log no_commit (melihat detail log pada nomor commit)</li>
+			<li>git log nama_file (melihat log sebuah file)</li>
+			<li>git log --author='nama_author' ( melihat log yang dilakukan seorang author)</li>
+		</ul>
+	</div>
+
+	<div>
+		<h4>git diff</h4>
+		<p>melihat perubahan pada suatu commit</p>
+		<ul>
+			<li>git diff no_commit (melihat perubahan file pada suatu commit)</li>
+			<li>git diff nama_file (melihat perubahan pada file)</li>
+			<li>dit diff no_commit no_commit (membandingkan perubahan dua commit)</li>
+		</ul>
+	</div>
+
+	<div>
+		<h4>git checkout</h4>
+		<p>untuk membatalkan perubahan pada status modified(add)</p>
+	</div>
+
+	<div>
+		<h4>git reset</h4>
+		<p>untuk membatalkan perubahan pada status stagged(commit)</p>
+	</div>
+
+	<div>
+		<h4>git branch</h4>
+		<p>pembuatan cabang</p>
+		<ul>
+			<li>git branch nama_branch (untuk membuat brach baru)</li>
+			<li>git branch (untuk cek branch yang ada)</li>
+			<li>git checkout nama_branch (untuk masuk ke suatu branch)</li>
+			<li>git merge nama_branch (untuk menggabungkan branch dengan master)</li>
+			<li>git branch -d nama_branch (untuk menghapus branch)	</li>
+		</ul>
+	</div>
+
+	<div>
+		<h4>git remote</h4>
+		<p>git remote add github ssh/https</p>
+		<p>https : minta password setiap kali push</p>
+		<p>ssh : tidak minta password setiap kali push</p>
+	</div>
+</body>
+</html>
